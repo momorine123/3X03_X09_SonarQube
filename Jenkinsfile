@@ -21,9 +21,4 @@ sh "${scannerHome}/bin/sonar-scanner \
 }
 }
 }
-post {
-always {
-recordIssues enabledForFailure: true, tool: sonarQube()
-}
-}
 }
